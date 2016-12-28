@@ -106,7 +106,10 @@ html, body {
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     border-radius: 5px;
-    
+    -webkit-filter: grayscale(100%) blur(0px);
+	filter: grayscale(100%) blur(0px);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
 }
 
 .main-footer {
