@@ -74,6 +74,10 @@ $breakpoint2: 900px;
 	float: left;
 }
 
+.main-content h2 {
+	text-align: left;
+}
+
 @include sticky-footer(120px, ".container", "#root-footer", "#footer");
 
 .main-content {
