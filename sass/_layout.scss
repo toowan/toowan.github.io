@@ -1,0 +1,97 @@
+
+// LAYOUT STYLES
+
+$legacy-support-for-ie: false;
+$legacy-support-for-mozilla: false;
+$experimental-support-for-opera: false; 
+$breakpoint1: 600px; 
+$breakpoint2: 900px;
+
+#main-header {
+	@include clearfix;
+}
+
+.logo a {
+	display: block;
+	width: 100%;
+	height: 90px;
+	margin-top: 2em;
+	margin-bottom: -80px;
+}
+
+.logo a {
+	@media (max-width: $breakpoint1) {
+		display: block;
+		margin-right: auto;
+		margin-left: auto;
+		width: 80px;
+	}
+}
+
+.main-nav {
+	@media (min-width: $breakpoint1) {
+		@include float-right;
+		@include horizontal-list(5px, left);
+		margin-top: 1em;
+		margin-bottom: 1em;
+	}
+	@media (max-width: $breakpoint1) {
+		margin-top: 25%;
+	}
+}
+
+.container {
+	position: relative;
+	@media (min-width: $breakpoint1) {
+		max-width: 1000px;
+		margin: auto;
+	} 
+}
+
+
+.main-content { 
+	@media (max-width: $breakpoint1) {
+	border: none;
+	margin-top: -15px;
+	}
+}
+
+.profilepic {
+	border: 1px dotted #ccc;
+	float: right;
+	border-radius: 50%;
+	margin-top: -10px;
+	margin-left: 10px;
+	@media (max-width: $breakpoint1) {
+		position: relative;
+	}
+}
+
+
+.contact {
+	width: 100%;
+	height: 100%;
+	float: left;
+}
+
+@include sticky-footer(120px, ".container", "#root-footer", "#footer");
+
+.main-content {
+	@media (min-width: $breakpoint2) {
+		max-width: 1000px;
+		margin: auto;
+	} 
+	@media (min-width: $breakpoint1) {
+		margin-left: 20px;
+		margin-right: 20px;
+	} 
+}
+
+
+@media only screen and (max-width : $breakpoint1),
+only screen and (max-device-width : $breakpoint1){
+    .galleryItem {width: 100%; border-bottom: 1px solid #222;}
+    .galleryItem img {display: block; margin-left: auto; margin-right: auto;}
+    .galleryItem h3 {font-size: 15px; text-align: center;}
+    .galleryItem p, {font-size: 15px; text-align: center;}
+}

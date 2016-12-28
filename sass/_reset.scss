@@ -1,0 +1,15 @@
+
+// CSS Resets
+
+@include reset-html5;
+
+body,
+p,
+h1,
+h2,
+h3 {
+	@include reset-box-model;
+}
+body {
+	@include reset-font;
+}

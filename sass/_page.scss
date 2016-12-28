@@ -1,0 +1,134 @@
+
+// PAGE STYLES
+$accent-color: #66CCCC;
+
+
+* {
+	@include box-sizing(border-box);
+}
+
+html, body {
+	color: #222;
+	background-color: white;
+	height: 100%;
+}
+
+
+.main-content {
+	border-top: 1px solid #AAAAAA;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	margin-left: 7%;
+	margin-right: 7%;
+	margin-top: 0%;
+}
+
+#main-header {
+	margin-bottom: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
+	background-color: white;
+	padding-bottom: 20px;
+	box-sizing: border-box;
+	@media (min-width: 600px) {
+	height: 125px;
+	}
+}
+
+
+%head-links {
+	display: block;
+	color: white;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	padding: 0px 5px;
+	margin: 5px 10px;
+	letter-spacing: 1px;
+	@media (max-width: 600px) {
+		border-radius: 5px;
+		padding: 5px 15px;
+	}
+}
+
+
+
+.main-nav {
+	a {
+		font-weight: 100;
+		font-family: serif;
+		color: #232323;
+		@extend %head-links;
+		@media (max-width: 600px) {
+		background-color: #232323;
+		color: white;
+		}
+	}
+	a:hover {
+		font-weight: 500;
+		border-bottom: 2px solid #232323;
+		color: $accent-color;
+		@extend %head-links;
+		@media (max-width: 600px) {
+		background-color: $accent-color;
+		color: white;
+		border: none;
+		}
+	}
+	li {
+		@media (min-width: 0) and (max-width: 768px) {
+			margin-top: 12px;
+		}
+	}
+}
+
+.galleryItem {
+	padding: 0;
+    color: #313131;
+    font-size: .85em;
+    float: left;
+    text-align: center;
+
+    width: 29.33%;
+    margin: 2% 2% 40px 2%;
+}
+ 
+
+.galleryItem h3 {
+    text-transform: uppercase;
+}
+
+ 
+.galleryItem img {
+    max-height: 200px;
+    max-width: 100%;
+    display: block; margin-left: auto; margin-right: auto;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    -webkit-filter: grayscale(100%) blur(0px);
+	filter: grayscale(100%) blur(0px);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+
+.galleryItem img:hover {
+	-webkit-filter: grayscale(0%) blur(3px);
+	filter: grayscale(0%) blur(3px);
+}
+
+.main-footer {
+	font-size: .80em;
+	color: #222;
+	text-align: center;
+	padding: 2.5em 0;
+	background-color: white;
+	padding-bottom: 100px; 
+	padding-top: 100px;
+}
+
+
+.social {
+	@include horizontal-list(5px);
+	display: inline-block;
+}

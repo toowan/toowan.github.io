@@ -1,0 +1,21 @@
+// COLOR HELPERS
+
+// $base: green; 
+
+// .colors {
+// 	li {
+// 		background: $base;
+// 	}
+// 	li:nth-child(2) {
+// 		background: adjust-lightness($base, 10%);
+// 	}
+// 	li:nth-child(3) {
+// 		background: adjust-saturation($base, 30%);
+// 	}
+// 	li:nth-child(4) {
+// 		@include background(linear-gradient($base, shade($base, 50%)));
+// 	}
+// 	li:last-child {
+// 		background: tint($base, 40%);
+// 	}
+// }

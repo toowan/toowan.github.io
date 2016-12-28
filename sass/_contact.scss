@@ -1,0 +1,74 @@
+$accent-color: #66CCCC;
+
+form {
+    width: 100%;
+    padding: 1.2em;
+    margin-left: -1.2em;
+    margin-bottom: 20em;
+}
+
+#form h3 {
+	text-align: center;
+	padding: 20px 0 50px 0px;
+	color: $accent-color;
+    font-size: 2em;
+}
+
+#form input[type="text"],
+#form input[type="email"],
+#form textarea {
+    width:50%;
+    box-shadow:inset 0 1px 2px #DDD, 0 1px 0 #FFF;
+    -webkit-box-shadow:inset 0 1px 2px #DDD, 0 1px 0 #FFF;
+    -moz-box-shadow:inset 0 1px 2px #DDD, 0 1px 0 #FFF;
+    border:1px solid #CCC;
+    background:#FFF;
+    margin:0 0 10px;
+    padding:10px;
+    border-radius:5px;
+    font-size: .85em;
+}
+
+#form textarea{
+	height: 10em;
+    width: 100%;
+    margin-bottom: 2em;
+}
+
+#form input[type="submit"] {
+    cursor:pointer;
+    width: 30%;
+    border:none;
+    background:$accent-color;
+    color:#FFF;
+    padding: 10px;
+    border-radius:5px;
+    font-size: .95em;
+    font-family: serif;
+    letter-spacing: 2px;
+    display: block;
+    float: left;
+}
+
+#form input[type="submit"]:hover {
+    background: #232323;
+    color: white;
+}
+
+.hide {
+    display:none;
+    visibility: hidden;
+}
+
+.contact {
+    @media (min-width: $breakpoint1) {
+		max-width: 600px;
+		margin: auto;
+	} 
+}
+
+#form input[type="submit"] {
+    @media (max-width: 470px) {
+        font-size: .85em;
+    }
+}

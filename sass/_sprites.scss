@@ -1,0 +1,26 @@
+// COMPASS SPRITES 
+
+$icons-layout: smart;
+$icons-sprite-dimensions: true;
+@import "icons/*.png";
+@include all-icons-sprites;
+
+
+.social a {
+	display: block;
+	@include hide-text;
+}
+
+
+$logo-layout: smart;
+$logo-sprite-dimensions: true;
+@import "main-logo/*.png";
+@include all-main-logo-sprites;
+
+.logo a {
+	display: block;
+	@include hide-text;
+}
+
+
+
