@@ -112,14 +112,6 @@ html, body {
 	transition: .3s ease-in-out;
 }
 
-.galleryItem img:hover {
-	background-color: black;
-	opacity: 0.8;
-	-webkit-filter: grayscale(0%) blur(0px);
-	filter: grayscale(0%) blur(0px);
-	-webkit-transition: .3s ease-in-out;
-	transition: .3s ease-in-out;
-}
 
 .main-footer {
 	font-size: .80em;
