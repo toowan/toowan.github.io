@@ -1,39 +1,23 @@
 /*
-Error: Undefined mixin 'box-sizing'.
-        on line 7 of _page.scss, in `box-sizing'
-        from line 7 of _page.scss
+Error: File to import not found or unreadable: compass/reset.
+        on line 3 of main.scss
 
-2: // PAGE STYLES
-3: $accent-color: #66CCCC;
-4: 
-5: 
-6: * {
-7: 	@include box-sizing(border-box);
-8: }
-9: 
-10: html, body {
-11: 	color: #222;
-12: 	background-color: white;
+1: 
+2: // Compass Modules
+3: @import "compass/reset";
+4: @import "compass/css3";
+5: @import "compass/utilities";
+6: @import "compass/layout";
+7: @import "compass/typography";
+8: 
 
 Backtrace:
-_page.scss:7:in `box-sizing'
-_page.scss:7
-/Users/toowan/.rvm/gems/ruby-2.2.2/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:351:in `block in visit_mixin'
-/Users/toowan/.rvm/gems/ruby-2.2.2/gems/sass-3.4.23/lib/sass/stack.rb:98:in `block in with_mixin'
-/Users/toowan/.rvm/gems/ruby-2.2.2/gems/sass-3.4.23/lib/sass/stack.rb:115:in `with_frame'
-/Users/toowan/.rvm/gems/ruby-2.2.2/gems/sass-3.4.23/lib/sass/stack.rb:98:in `with_mixin'
-/Users/toowan/.rvm/gems/ruby-2.2.2/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:349:in `visit_mixin'
-/Users/toowan/.rvm/gems/ruby-2.2.2/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Users/toowan/.rvm/gems/ruby-2.2.2/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
-/Users/toowan/.rvm/gems/ruby-2.2.2/gems/sass-3.4.23/lib/sass/stack.rb:79:in `block in with_base'
-/Users/toowan/.rvm/gems/ruby-2.2.2/gems/sass-3.4.23/lib/sass/stack.rb:115:in `with_frame'
-/Users/toowan/.rvm/gems/ruby-2.2.2/gems/sass-3.4.23/lib/sass/stack.rb:79:in `with_base'
-/Users/toowan/.rvm/gems/ruby-2.2.2/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:160:in `visit'
-/Users/toowan/.rvm/gems/ruby-2.2.2/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:433:in `block (2 levels) in visit_rule'
-/Users/toowan/.rvm/gems/ruby-2.2.2/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:433:in `map'
-/Users/toowan/.rvm/gems/ruby-2.2.2/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:433:in `block in visit_rule'
-/Users/toowan/.rvm/gems/ruby-2.2.2/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:181:in `with_environment'
-/Users/toowan/.rvm/gems/ruby-2.2.2/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:431:in `visit_rule'
+main.scss:3
+/Users/toowan/.rvm/gems/ruby-2.2.2/gems/sass-3.4.23/lib/sass/tree/import_node.rb:67:in `rescue in import'
+/Users/toowan/.rvm/gems/ruby-2.2.2/gems/sass-3.4.23/lib/sass/tree/import_node.rb:45:in `import'
+/Users/toowan/.rvm/gems/ruby-2.2.2/gems/sass-3.4.23/lib/sass/tree/import_node.rb:28:in `imported_file'
+/Users/toowan/.rvm/gems/ruby-2.2.2/gems/sass-3.4.23/lib/sass/tree/import_node.rb:37:in `css_import?'
+/Users/toowan/.rvm/gems/ruby-2.2.2/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:313:in `visit_import'
 /Users/toowan/.rvm/gems/ruby-2.2.2/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:36:in `visit'
 /Users/toowan/.rvm/gems/ruby-2.2.2/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
 /Users/toowan/.rvm/gems/ruby-2.2.2/gems/sass-3.4.23/lib/sass/stack.rb:79:in `block in with_base'
@@ -74,4 +58,4 @@ _page.scss:7
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined mixin 'box-sizing'.\A         on line 7 of _page.scss, in `box-sizing'\A         from line 7 of _page.scss\A \A 2: // PAGE STYLES\A 3: $accent-color: #66CCCC;\A 4: \A 5: \A 6: * {\A 7: 	@include box-sizing(border-box);\A 8: }\A 9: \A 10: html, body {\A 11: 	color: #222;\A 12: 	background-color: white;"; }
+  content: "Error: File to import not found or unreadable: compass/reset.\A         on line 3 of main.scss\A \A 1: \A 2: // Compass Modules\A 3: @import \"compass/reset\";\A 4: @import \"compass/css3\";\A 5: @import \"compass/utilities\";\A 6: @import \"compass/layout\";\A 7: @import \"compass/typography\";\A 8: "; }
