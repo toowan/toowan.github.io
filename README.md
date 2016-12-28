@@ -1,2 +1,2 @@
 # toowan.com
-personal portfolio website
+portfolio built with Compass, SASS, and JS.
