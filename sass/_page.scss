@@ -113,8 +113,8 @@ html, body {
 }
 
 .galleryItem img:hover {
-	-webkit-filter: grayscale(0%) blur(3px);
-	filter: grayscale(0%) blur(3px);
+	background-color: black;
+	opacity: 0.8;
 }
 
 .main-footer {
