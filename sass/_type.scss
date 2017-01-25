@@ -4,9 +4,14 @@ $base-font-size: 16px;
 $base-line-height: 24px; 
 @include establish-baseline;
 
+@import 
+url(https://fonts.googleapis.com/css?family=Roboto:100);
+
+
+
 body {
-	font-family: sans-serif;
-	// @include debug-vertical-alignment;
+	font-family: 'Roboto',sans-serif;
+  	font-weight: 100;
 }
 
 h1 {
@@ -50,8 +55,9 @@ p {
 }
 
 .main-footer p {
-	font-family: serif;
-	font-size: .8em;
+	font-family: 'Roboto',sans-serif;
+  	font-weight: 100;
+	font-size: .85em;
 	color: #888;
 	text-transform:uppercase;
 }
@@ -77,6 +83,16 @@ p {
 	text-transform: lowercase;
 }
 
+a {
+	color: $accent-color;
+	text-decoration: none;
+}
+
+
+.main-footer a:hover {
+	color: #888;
+	border-bottom: 2px solid $accent-color;
+}
 
 // text utilities
 
