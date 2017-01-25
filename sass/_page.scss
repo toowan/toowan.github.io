@@ -105,12 +105,12 @@ html, body {
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     border-radius: 5px;
-    -webkit-filter: grayscale(100%); 
+    -webkit-filter: grayscale(0%); 
 	-webkit-transition: .3s ease-in-out;
 }
 
 .galleryItem img:hover {
-	-webkit-filter: grayscale(0%);
+	-webkit-filter: grayscale(100%);
 	transform: scale(1.1);
 }
 
